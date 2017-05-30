@@ -1,0 +1,16 @@
+<h2>Weather Report</h2>
+<div class="col-md-8 col-md-offset-2">
+<div class="form-group">
+<input type="text" [(ngModel)]="id_city" class="form-control" placeholder="Enter City name: Providence ..."><br>
+<input type="text" [(ngModel)]="id_state" class="form-control" placeholder="Enter State: RhodeIsland...">
+<br>
+<button type="button" class="btn btn-primary" (click)="callWeatherService()">Submit</button>
+<br><br><br>
+<br>
+<p class="well lead" *ngIf="data">
+   <strong>City, State, Country :</strong> {{ this.op_city }} {{ this.op_region }} {{ this.op_country }} <br>
+   <strong>Current Condition :</strong> {{ this.op_text }} <br>
+   <strong>Current Temperature :</strong> {{ this.op_temp }} <br>
+</p>
+</div>
+</div>

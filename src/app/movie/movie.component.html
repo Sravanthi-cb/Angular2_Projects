@@ -1,0 +1,18 @@
+<h2>Movie Details</h2>
+<div class="col-md-8 col-md-offset-2">
+  <div class="form-group">
+    <input type="text" required [(ngModel)]="id_movie" (change)="callMovieService()" class="form-control" placeholder="Enter Movie name ...">
+
+     <br>
+     <p class="well lead" *ngIf="data">
+        <strong>Title :</strong> {{ this.mv_Title }} <br>
+        <strong>Plot :</strong> {{ this.mv_Plot }} <br>
+        <strong>Actors :</strong> {{ this.mv_Actors }} <br>
+        <strong>Directed by :</strong> {{ this.mv_Director }} <br>
+        <strong>Rated :</strong> {{ this.mv_Rated }} <br>
+        <strong>Release Date :</strong> {{ this.mv_Released }} <br>
+        <strong>Genre: </strong> {{ this.mv_genre }} <br>
+     </p>
+
+     </div>
+  </div>
